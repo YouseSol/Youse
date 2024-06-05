@@ -103,6 +103,7 @@
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
+    /* width: 100%; */
     width: 56.25em;
     height: 26em;
   }
@@ -218,4 +219,61 @@
       font-size: 10px;
     }
   }
-  
+
+@media (max-width: 920px) {
+    .hero-image-container {
+        animation: hero-fade-in 1s 0.5s linear forwards;
+        opacity: 0;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        /* width: 100%; */
+        width: 25em;
+        height: 13em;
+      }
+
+    .window-background {
+        animation: background-color var(--animation-duration) cubic-bezier(.81,-0.46,.19,1.33) infinite;
+        position: absolute;
+        height: 20em;
+        width: 15em;
+        top: 0;
+      }
+      
+    .screen-container {
+        animation: move-emails var(--animation-duration) infinite ease-out;
+        position: absolute;
+        width: 3.8em;
+        height: 3em;
+        bottom: 4.33em;
+        background: #fff url(https://cssanimation.rocks/images/courses/animation_101/emails.svg) repeat-y;
+        background-size: 100% auto;
+        left: 50%;
+        transform: translate(-16.4%, -10%);
+      }
+      
+    .notification {
+        animation: move-notification var(--animation-duration) infinite cubic-bezier(.81,-0.46,.19,1.33);
+        position: absolute;
+        bottom: 62%;
+        left: 65%;
+        width: 4%;
+        height: 3%;
+        background: #fff url(https://cssanimation.rocks/images/courses/animation_101/notification.svg);
+        background-size: 100%;
+      }
+      
+    .moon {
+        animation: moon var(--animation-duration) infinite linear;
+        position: absolute;
+        left: 25%;
+        top: 3%;
+        background: url(https://cssanimation.rocks/images/courses/animation_101/moon.svg) no-repeat;
+        background-size: 100%;
+        height: 25%;
+        width: 8%;
+        transform-origin: 30% 350%;
+      }
+}
