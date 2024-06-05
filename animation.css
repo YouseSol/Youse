@@ -221,6 +221,25 @@
   }
 
 @media (max-width: 920px) {
+
+    .post-header {
+        background: #22BDA0;
+        /* position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0; */
+      
+        .hero-image {
+          position: absolute;
+          bottom: -20%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 25em;
+        }
+    }
+
+    
     .hero-image-container {
         animation: hero-fade-in 1s 0.5s linear forwards;
         opacity: 0;
@@ -245,9 +264,9 @@
     .screen-container {
         animation: move-emails var(--animation-duration) infinite ease-out;
         position: absolute;
-        width: 3.8em;
-        height: 3em;
-        bottom: 4.33em;
+        width: 3.4em;
+        height: 2.8em;
+        bottom: 3.33em;
         background: #fff url(https://cssanimation.rocks/images/courses/animation_101/emails.svg) repeat-y;
         background-size: 100% auto;
         left: 50%;
@@ -257,7 +276,7 @@
     .notification {
         animation: move-notification var(--animation-duration) infinite cubic-bezier(.81,-0.46,.19,1.33);
         position: absolute;
-        bottom: 62%;
+        bottom: 52%;
         left: 65%;
         width: 4%;
         height: 3%;
