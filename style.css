@@ -14,3 +14,14 @@ body{
     background-repeat: no-repeat;
     height: 1080px;
 }
+
+.logotype-img {
+    width: 100%;
+}
+
+.logotype-position {
+    position: absolute;
+    top: 5em;
+    left: 1em;
+    width: 10em;
+}
